@@ -116,7 +116,8 @@ This is the CSS styles for the project pages of my website
   }
 
   .featured-project img,
-  .featured-project video {
+  .featured-project video, 
+  .featured-project iframe {
     width: 100%;
   }
 
