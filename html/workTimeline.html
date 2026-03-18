@@ -1,0 +1,111 @@
+<!--
+Bryce Dixon  March 2026
+Portfolio website
+This website was built on top of a website I created in Dec 2024 for COMP 2681.
+
+This is the page which holds a vertical timeline displaying an overview of
+some of my work history. 
+
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Portfolio: Work Timeline </title>
+
+  <!-- The styles used in multiple pages are in stylesheets, CSS used for this page are below -->
+  <link rel="stylesheet" href="../css/allPages_mobile.css">
+  <link rel="stylesheet" href="../css/allPages_desktop.css">
+  <!-- Css for formatting the timeline on this page -->
+  <link rel="stylesheet" href="../css/timeline.css">
+
+  <!--Link javascript file, used for mobile drop down menu, defer to parse with page download and run after-->
+  <script src="../javascript/dropdown_menu.js" type="text/javascript" defer></script>
+  <meta charset="UTF-8" />
+  <meta name="keywords" content="keywords to help browser" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- This formats the titles over the lists cleanly -->
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <!--NAV BAR-->
+  <!--This navbar is used as a drop down menu when in mobile viewing. It is hidden when not in mobile-->
+  <!--This allows the dropdown to display as a dropdown menu when clicked-->
+
+  <div class="navigation_bar dropDown" style="border-bottom: 8px solid #002554;">
+    <div class="menu_button_mobile_only">
+      <button id="dropdown_mobile_only" class="dropdown_button" onclick="displayMenu()">&#x2261; MENU</button>
+      <a href="index.html" class="logo"> {b_D}</a>
+    </div>
+    <ul id="drop_down_menu" class="navigation dropdown_content">
+      <li><a style="background-color: #01a2e0; text-decoration: underline;">WORK</a></li>
+      <li><a href="educationTimeline.html" title="View My Education">EDUCATION</a></li>
+      <li><a href="projects.html" title="View My Projects">PROJECTS</a></li>
+    </ul>
+  </div>
+
+  <!-- WORK TIMELINE -->
+  <!-- Modified from: https://www.w3schools.com/howto/howto_css_timeline.asp -->
+  <div class="timeline">
+    <!-- Left is to left of timeline -->
+    <div class="container left">
+      <div class="content">
+        <h2>Registered Physiotherapist (2021-present)</h2>
+        <ul>
+          <li>I treat individuals of all ages for a variety of injuries.</li>
+          <li>Work as an independent contractor, which provides me with a flexible schedule.</li>
+        </ul>
+        <a href="https://threesixtyphysio.ca/our-team/bryce-dixon/">Company Website Link >></a>
+      </div>
+    </div>
+    <!-- Right is to right of timeline -->
+    <div class="container right">
+      <div class="content">
+        <h2>Adjunct Professor (2022-present)</h2>
+        <ul>
+          <li>Faculty of Health and Exercise Science</li>
+          <li>Courses taught: Introductory- and Advanced-Anatomy, Concussion.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container left">
+      <div class="content">
+        <h2>Forest Fire Fighter (2013-2019)</h2>
+        <ul>
+          <li>Worked on a 25 person crew for 6 seasons, and a 3 person helicopter crew for 1 season.</li>
+          <li>Head of first aid for 3 seasons.</li>
+          <li>Additional Certifications: Danger Tree Assesing, Chainsaw (Faller in Training)</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container right">
+      <div class="content">
+        <h2>Mountain Equipment Coop (2018-2019)</h2>
+        <ul>
+          <li>Backstock Manager and Equipment Advisor (Kelowna, BC)</li>
+          <li>Rearranged the design of the backstock storage product flow for efficiency. This system remains today.
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container left">
+      <div class="content">
+        <h2>...</h2>
+      </div>
+    </div>
+  </div>
+
+
+  <footer class="footer_every_page">
+    <div class="footer_cell">
+      <p>&copy Bryce Dixon, 2026</p>
+    </div>
+  </footer>
+</body>
+
+</html>

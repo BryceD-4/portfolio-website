@@ -1,0 +1,120 @@
+<!--
+Bryce Dixon  March 2026
+Portfolio Website
+This website was built on top of a website I created in Dec 2024 for COMP 2681.
+
+This page displays a few projects I have created in a formatted grid. 
+
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Styles used in many pages in stylesheets. CSS used only on this page are below <style> -->
+    <link rel="stylesheet" href="../css/allPages_mobile.css">
+    <!-- <link rel="stylesheet" href="css/allPages_tablet.css"> -->
+    <link rel="stylesheet" href="../css/allPages_desktop.css">
+    <link rel="stylesheet" href="../css/projects.css">
+
+    <title> Portfolio: Projects</title>
+
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="keywords to help browser" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../javascript/dropdown_menu.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <!--MAIN NAV BAR-->
+    <!--Same as index.html-->
+    <div class="navigation_bar dropDown">
+        <div class="menu_button_mobile_only">
+            <button id="dropdown_mobile_only" class="dropdown_button" onclick="displayMenu()">&#x2261; MENU</button>
+            <a href="index.html" class="logo"> {b_D}</a>
+        </div>
+        <ul id="drop_down_menu" class="navigation dropdown_content">
+            <li><a href="workTimeline.html" title="View My Work History">WORK</a></li>
+            <li><a href="educationTimeline.html" title="View My Education">EDUCATION</a></li>
+            <li><a href="projects.html" style="background-color: #01a2e0; text-decoration: underline;">PROJECTS</a></li>
+        </ul>
+    </div>
+
+    <!--SUB MENu: Inner page nav bar-->
+    <div class="tickets_navigation">
+        <a id="first_link_passes_nav" style="background-color: #01a2e0;">Projects Overview</a>
+        <a href="fireSim.html" title="">Fire Simulator</a>
+        <!-- <a href="" title="">Ant Simulator</a>
+        <a href="" title="">Solar Robot</a>
+        <a href="" title="">2D Survival Game</a> -->
+    </div>
+
+
+    <!-- Projects Grid -->
+
+    <section class="projects">
+        <h1>Projects</h1>
+        <p class="projects-intro">
+            Here is a selection of a few of the software projects I have developed!
+        </p>
+
+        <!-- Grid itself -->
+        <div class="project-grid">
+            <div class="project-card">
+                <video controls autoplay muted loop playsinline>
+                    <source src="../videos/fire-sim.mp4" type="video/mp4">
+                </video>
+                <h3>Unity Forest Fire Simulator (2026)</h3>
+                <p class="tech">Unity | C# | GitHub</p>
+                <p>
+                    A grid-based wildfire simulation modelling fire propagation
+                    using probabilistic ignition and environmental variables.
+                </p>
+                <a target="_blank" href="https://github.com/BryceD-4/FireSimulator4911">GitHub >></a>
+                <a href="fireSim.html">More Details >></a>
+            </div>
+
+            <div class="project-card">
+                <video controls autoplay muted loop playsinline>
+                    <source src="../videos/antSimVid.mp4" type="video/mp4">
+                </video>
+                <h3>Ant Simulator (2026)</h3>
+                <p class="tech">JavaFx</p>
+                <p>
+                    A state machine which utilizes wandering, pathfinding (A*)
+                    and path smoothing behaviours. Year Built: 2026.
+                </p>
+                <!-- <a target="_blank" href="">GitHub >></a> -->
+            </div>
+            <div class="project-card">
+                <img src="../images/arduino_robot_front.jpg">
+                <h3>Arduino Solar Robot (2024)</h3>
+                <p class="tech"> Arduino | C++ </p>
+                <p>
+                    A physical robot which navigated, mapped, and pathfound in 
+                    an unknown environment.
+                </p>
+                <!-- <a target="_blank" href="">GitHub >></a> -->
+            </div>
+            <div class="project-card">
+                <video controls autoplay muted loop playsinline>
+                    <source src="../videos/sudsy.mp4" type="video/mp4">
+                </video>
+                <h3>2D Survival Game (2025)</h3>
+                <p class="tech">Phaser | JavaScript | Tiled</p>
+                <p>
+                    A 2D game where the user must survive waves of enemies, and
+                    collect and purchase upgrades in 1 of 3 levels. 
+                </p>
+                <!-- <a target="_blank" href="">GitHub >></a> -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer_every_page">
+        <div class="footer_cell">
+            <p>&copy Bryce Dixon, 2026</p>
+        </div>
+    </footer>
+</body>
+
+</html>

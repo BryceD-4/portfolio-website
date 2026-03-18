@@ -1,0 +1,206 @@
+/*
+Bryce Dixon  March 2026
+Portfolio Website
+This website was built on top of a website I created in Dec 2024 for COMP 2681.
+
+This page holds all CSS styles for mobile format for styles used on ALL  website pages. 
+
+COLOUR PALLETTE:
+dark blue - #002554
+light blue - #01a2e0
+dark grey - #e6e6e6
+light grey - #f2f2f2
+white - #ffffff
+black - #0e0e0e
+*/
+
+@media screen and (min-width:240px) and (max-width:767px) {
+
+  /*Added as the navigation bar was not taking up the entire page*/
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+  }
+
+  /* Website Logo { b_D } */
+  .logo {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 24px;
+    font-weight: 600;
+    /* color: #2c5aa0; */
+    text-decoration: none;
+    border: 2px solid #f2f2f2;
+    padding-left: 40px;
+  }
+
+
+  /* Modified to undo the settings applied to links <a> above */
+  .logo:hover {
+    text-decoration: none;
+    background-color: #f2f2f2;
+    color: #01a2e0;
+  }
+
+  .navigation_bar {
+    /*Removed the sticky positioning from the nav bar*/
+    display: -webkit-flex;
+    /* this is for older versions of chrome, Safari, and Opera */
+    display: -moz-flex;
+    /* This is for older versions of firefox */
+    display: -ms-flexbox;
+    /* for older version of Internet explorer */
+    position: sticky;
+    top: 0;
+    display: flex;
+    /*Use flexbox to make items in this container flexible (align in a row for this page)*/
+    width: 100%;
+    height: auto;
+    background-color: #f2f2f2;
+    /*This grey went well with the dark green*/
+    justify-content: space-between;
+    /*For the flex box items to align as desired in the row*/
+    align-content: center;
+    /*Not really needed in msot cases, but if formatted to a large screen this may be noticeable*/
+    padding: 0.5vh;
+    /*Surrounding the flexbox items in nav bar*/
+    z-index: 10;
+    /*Ensures it is infront of everything*/
+  }
+
+  .navigation_bar li {
+    border-bottom: 2px solid #01a2e0;
+    width: 100%;
+    /*Remove the bullet points*/
+    list-style-type: none;
+
+  }
+
+  a:link {
+    /*Links are all the same colour as the text*/
+    text-decoration: none;
+    color: #0e0e0e;
+  }
+
+  a:visited {
+    /*Visited links are not changing colour for this webpage*/
+    text-decoration: none;
+    color: #0e0e0e;
+  }
+
+  /*DROPDOWN MENU*/
+  /*This formats the dropdown menu to allow it to populate when in mobile mode*/
+  .dropdown_button {
+    background-color: #f2f2f2;
+    color: #002554;
+    padding: 5px;
+    border-radius: 10px;
+    border-color: #01a2e0;
+    font-size: 22px;
+  }
+
+  /*Kept as this could also be used if user has desktop on a small browser window*/
+  .dropdown_button:focus,
+  .dropdown_button:hover {
+    background-color: #01a2e0;
+    text-decoration: underline;
+    color: #e6e6e6;
+  }
+
+  /*this makes each of the buttons to stack vertically*/
+  .menu_button_mobile_only {
+    display: flex;
+    flex: 1;
+    align-items: center;
+  }
+
+  /*Relative to one another and inline block lets the links format vertically*/
+  /*This is form the indicated W3C tutorial in the dropdown() java script form*/
+  .dropDown {
+    position: relative;
+    display: inline-block;
+    /* This makes the menu bar stick to the top of the page */
+    position: sticky;
+    top: 0;
+  }
+
+  /**/
+  .dropdown_content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 120px;
+    /*Scroll if needed*/
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    /*Make sure it isn't hidden from anything*/
+    z-index: 5;
+
+  }
+
+  .dropdown_content li a {
+    color: #0e0e0e;
+    font-size: 18px;
+    padding: 12px 6px;
+    display: block;
+    background-color: #e6e6e6;
+  }
+
+  .dropdown_content li:hover,
+  .dropdown_content li:focus {
+    background-color: #01a2e0;
+    text-decoration: underline;
+  }
+
+  /*This is used by the java script, the items selected are labelled as a "show" class, 
+which are then displayed as the drop down menu items*/
+  .show {
+    display: block;
+    padding: 0;
+  }
+
+  /*Sub menu navigation*/
+
+  .tickets_navigation {
+    background-color: #002554;
+    /*Hides any overflow to avoid horizontal scrolling*/
+    overflow: hidden;
+    position: sticky;
+    /* This is relative to the size of the top menu */
+    top: 47px;
+    z-index: 9;
+  }
+
+  #first_link_passes_nav {
+    border-left: 2px solid #01a2e0;
+  }
+
+  .tickets_navigation a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+    border-right: 2px solid #01a2e0;
+  }
+
+  /*FOOTER*/
+
+  .footer_every_page {
+
+    max-width: 100%;
+    z-index: 0;
+    text-align: right;
+    border-top: 8px solid #002554;
+  }
+
+ div.footer_cell p {
+    font-weight: bold;
+    padding: 15px;
+    /* Center text */
+    margin: 0 auto;
+  }
+
+}

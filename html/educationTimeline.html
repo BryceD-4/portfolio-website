@@ -1,0 +1,106 @@
+<!--
+Bryce Dixon  March 2026
+Portfolio Website
+This website was built on top of a website I created in Dec 2024 for COMP 2681.
+
+This displays a vertical timeline of my education history. 
+ 
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="../css/allPages_mobile.css">
+  <!-- <link rel="stylesheet" href="css/allPages_tablet.css"> -->
+  <link rel="stylesheet" href="../css/allPages_desktop.css">
+  <!-- Css for formatting the timeline on this page -->
+  <link rel="stylesheet" href="../css/timeline.css">
+
+  <title> Portfolio: Education Timeline</title>
+
+  <meta charset="UTF-8" />
+  <meta name="keywords" content="keywords to help browser" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="../javascript/dropdown_menu.js" type="text/javascript" defer></script>
+
+</head>
+
+<body>
+  <!--MAIN NAV BAR-->
+  <!--Same as index.html-->
+  <div class="navigation_bar dropDown">
+    <div class="menu_button_mobile_only">
+      <button id="dropdown_mobile_only" class="dropdown_button" onclick="displayMenu()">&#x2261; MENU</button>
+      <a href="index.html" class="logo"> {b_D}</a>
+    </div>
+    <ul id="drop_down_menu" class="navigation dropdown_content">
+      <li><a href="workTimeline.html" title="View My Work History">WORK</a></li>
+      <li><a href="educationTimeline.html" style="background-color: #01a2e0; text-decoration: underline;">EDUCATION</a>
+      </li>
+      <li><a href="projects.html" title="View My Projects">PROJECTS</a></li>
+    </ul>
+  </div>
+
+  <!-- Sub menu -->
+  <div class="tickets_navigation">
+    <a id="first_link_passes_nav" style="background-color: #01a2e0;">Education Timeline</a>
+    <a href="computerScienceEduc.html">Computer Science</a>
+    <br>
+  </div>
+
+
+  <!-- EDUCATION TIMELINE -->
+  <!-- Modified from: https://www.w3schools.com/howto/howto_css_timeline.asp -->
+  <div class="timeline">
+    <!-- To the left of the timeline = container left -->
+    <div class="container left">
+      <div class="content">
+        <h2>BSc Computer Science (2023-2026)</h2>
+        <ul>
+          <li>GPA: 4.33 (93% avg)</li>
+          <li>Started at the University of British Columbia (Okanagan)</li>
+          <li> Completed through Thompson Rivers University.</li>
+        </ul>
+        <a href="computerScienceEduc.html">More Details >></a>
+      </div>
+    </div>
+    <!-- To the right of the timeline = container right -->
+    <div class="container right">
+      <div class="content">
+        <h2>Master of Physical Therapy (2019-2021)</h2>
+        <ul>
+          <li>GPA: 4.0 (88% avg)</li>
+          <li>Completed at the University of British Columbia (Vancouver).</li>
+          <li>Additional training in: weight lifting, concussion/ neurological, and running injuries.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container left">
+      <div class="content">
+        <h2>Directed Studies/ Research (2017-2019)</h2>
+        <ul>
+          <li>GPA: 4.33 (93% avg)</li>
+          <li>Completed at the University of British Columbia (Okanagan).</li>
+          <li>Content focus: Respiratory Pathology and Exercise Physiology </li>
+        </ul>
+      </div>
+    </div>
+    <div class="container right">
+      <div class="content">
+        <h2>BSc Environmental Chemistry (2013-2017)</h2>
+        <ul>
+          <li>GPA: 3.7 (80% avg)</li>
+          <li>Completed at the University of British Columbia (Okanagan).</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer_every_page">
+    <div class="footer_cell">
+      <p>&copy Bryce Dixon, 2026</p>
+    </div>
+  </footer>
+</body>
+
+</html>

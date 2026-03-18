@@ -1,0 +1,111 @@
+<!--
+Bryce Dixon  March 2026
+Portfolio Website
+This website was built on top of a website I created in Dec 2024 for COMP 2681.
+
+This page holds some additional information about my Computer Science background.
+
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="../css/allPages_mobile.css">
+  <link rel="stylesheet" href="../css/allPages_desktop.css">
+
+  <title> Portfolio: Education - Computer Science</title>
+
+  <meta charset="UTF-8" />
+  <meta name="keywords" content="keywords to help browser" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="../javascript/dropdown_menu.js" type="text/javascript" defer></script>
+
+  <style>
+    .content h2 {
+      margin: 5px 10px 10px;
+    }
+
+    .content ul {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
+
+    .education {
+      max-width: 600px;
+      /* stop content from stretching too wide */
+      margin: 0 auto;
+      /* center the whole block */
+      padding: 20px;
+    }
+
+    /* center heading */
+    /* .education h2{
+        text-align: center;   
+      } */
+
+    /* keeps bullets aligned */
+    .education ul {
+      padding-left: 50px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!--MAIN NAV BAR-->
+  <!--Same as index.html-->
+  <div class="navigation_bar dropDown">
+    <div class="menu_button_mobile_only">
+      <button id="dropdown_mobile_only" class="dropdown_button" onclick="displayMenu()">&#x2261; MENU</button>
+      <a href="index.html" class="logo"> {b_D}</a>
+    </div>
+    <ul id="drop_down_menu" class="navigation dropdown_content">
+      <li><a href="workTimeline.html" title="View My Work History">WORK</a></li>
+      <li><a href="educationTimeline.html" style="background-color: #01a2e0; text-decoration: underline;">EDUCATION</a>
+      </li>
+      <li><a href="projects.html" title="View My Projects">PROJECTS</a></li>
+    </ul>
+  </div>
+
+  <!-- Sub navigation menu -->
+  <div class="tickets_navigation">
+    <a id="first_link_passes_nav" href="educationTimeline.html">Education Timeline</a>
+    <a style="background-color: #01a2e0;">Computer Science</a>
+    <br>
+  </div>
+  <!-- Content section -->
+  <div class="education">
+    <h2>Computer Science Education (2023-2026)</h2>
+    <p>I have familiarity with the following items: </p>
+    <h3>Technologies Used:</h3>
+    <ul>
+      <li>GitHub</li>
+      <li>MongoDB</li>
+      <li>Docker</li>
+      <li>PyMongo</li>
+      <li>Unity</li>
+      <li>UNIX/Linux</li>
+      <li>Phaser, Tiled</li>
+      <li>...to name a few</li>
+    </ul>
+
+    <h3>Topics Covered:</h3>
+    <ul>
+      <li>Languages: Java, Python, C, C++, C#, </li>
+      <li>HTML, CSS, JavaScript</li>
+      <li>SQL, NoSQL (MongoDB)</li>
+      <li>Game AI and Game Design</li>
+      <li>Embedded and Robotic Programming</li>
+      <li>Algorithm Analysis and Design</li>
+      <li>...to name a few </li>
+    </ul>
+  </div>
+
+  <footer class="footer_every_page">
+    <div class="footer_cell">
+      <p>&copy Bryce Dixon, 2026</p>
+    </div>
+  </footer>
+</body>
+
+</html>

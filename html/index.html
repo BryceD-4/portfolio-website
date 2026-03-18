@@ -1,0 +1,101 @@
+<!--
+Bryce Dixon  March 2026
+Portfolio Website
+This website was built on top of a website I created in Dec 2024 for COMP 2681.
+
+This is the homepage for my portfolio website. 
+
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Portfolio: Home Page </title>
+    
+    <link rel="stylesheet" href="../css/allPages_mobile.css">
+    <link rel="stylesheet" href="../css/allPages_desktop.css">
+
+    <!--Link javascript file, used for mobile drop down menu, defer to parse with page download and run after-->
+    <script src="../javascript/dropdown_menu.js" type="text/javascript" defer></script>
+    <meta charset="UTF-8"/>
+    <meta name="keywords" content="keywords to help browser"/>
+    <!--This allows for the device to utilize viewport when scaling to @media screen sizes indicated-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    
+    <style>
+      .front_page {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 900px;
+        margin: 60px auto;
+        padding: 20px;
+      }
+      .front_page h1::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 4px;
+        background-color: #01a2e0;
+        /* margin: 10px auto; */
+      }
+
+      .front_page-text {
+        max-width: 500px;
+      }
+
+      .front_page h1 {
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+      }
+
+      .front_page p {
+        color: #555;
+        margin-bottom: 20px;
+      }
+
+      .front_page-image img {
+        width: 180px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--NAV BAR-->
+    <div class="navigation_bar dropDown" style="border-bottom: 8px solid #002554;">
+      <!--This navbar is used as a drop down menu when in mobile viewing. It is hidden when not in mobile-->
+      <div class = "menu_button_mobile_only">
+        <!--This allows the dropdown to display as a dropdown menu when clicked-->
+        <button id="dropdown_mobile_only" class="dropdown_button" onclick="displayMenu()">&#x2261; MENU</button>
+        <!--The homepage logo is used as a link to the homepage-->
+        <!-- <a href="index.html"><img src="images/Initials.jpg" id="website_logo" alt="homepage logo"></a> -->
+         <a href="index.html" class="logo"> {b_D}</a>
+      </div>
+      <ul id="drop_down_menu" class="navigation dropdown_content">
+        <!--These are the main menu items that are clickable links to the various pages-->
+        <li><a href="workTimeline.html" title="View My Work History">WORK</a></li>
+        <li><a href="educationTimeline.html" title="View My Education">EDUCATION</a></li>
+        <li><a href="projects.html" title="View My Projects">PROJECTS</a></li>
+      </ul>
+    </div>
+
+    <section class="front_page">
+      <div class="front_page-text">
+        <h1>Hi, I'm Bryce</h1>
+        <p>A Physiotherapist who enjoys software development, robotics, 
+          and problem solving.</p>
+      </div>
+
+      <div class="front_page-image">
+        <img src="../images/Me_Colour.jpg" alt="Profile photo">
+      </div>
+    </section>
+
+
+   <footer class="footer_every_page">
+      <div class="footer_cell">
+        <p>&copy Bryce Dixon, 2026</p>
+      </div>
+    </footer>
+  </body>
+</html>

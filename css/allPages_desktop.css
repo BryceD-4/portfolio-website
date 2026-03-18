@@ -1,0 +1,175 @@
+/*
+Bryce Dixon  March 2026
+Portfolio Website
+This website was built on top of a website I created in Dec 2024 for COMP 2681.
+
+This is the CSS page for desktop device styles affecting every page in the website. 
+
+COLOUR PALLETTE:
+dark blue - #002554
+light blue - #01a2e0
+dark grey - #e6e6e6
+light grey - #f2f2f2
+white - #ffffff
+black - #0e0e0e
+*/
+
+/* Allows for smooth transitions when hovering over links (does not adjust items around it */
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (min-width:768px) {
+
+  /*Added as the navigation bar was not taking up the entire page*/
+  body,
+  html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+  }
+
+  /* Website Logo { b_D } */
+  .logo {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 24px;
+    font-weight: 600;
+    /* color: #2c5aa0; */
+    text-decoration: none;
+    border: 2px solid #f2f2f2;
+    padding: 5px;
+  }
+
+  /* Modified to undo the settings applied to links <a> above */
+  .logo:hover {
+    text-decoration: none;
+    background-color: #f2f2f2;
+    color: #01a2e0;
+  }
+
+  .navigation_bar {
+    display: -webkit-flex;
+    /* this is for older versions of chrome, Safari, and Opera */
+    display: -moz-flex;
+    /* This is for older versions of firefox */
+    display: -ms-flexbox;
+    /* for older version of Internet explorer */
+    position: sticky;
+    top: 0;
+    /*This relates to the sticky positioning of the nav bar*/
+    display: flex;
+    /*Use flexbox to make items in this container flexible (align in a row for this page)*/
+    width: 100%;
+    height: auto;
+    background-color: #f2f2f2;
+    /*This grey went well with the dark green*/
+    justify-content: space-between;
+    /*For the flex box items to align as desired in the row*/
+    align-content: center;
+    /*Not really needed in msot cases, but if formatted to a large screen this may be noticeable*/
+    padding: 0.5vh;
+    /*Surrounding the flexbox items in nav bar*/
+    z-index: 10;
+    align-items: center;
+    /*Ensures nav items are centered vertically*/
+  }
+
+  ul.navigation {
+    display: flex;
+    /*Without this, items would be arranged as a column and not a row*/
+    list-style-type: none;
+    /*No pointer symbols for the nav bar items*/
+    margin: 0;
+    padding: 0;
+  }
+
+  li a {
+    display: block;
+    /*This made the elements format nicely in the div container*/
+    text-align: center;
+    padding: 10px 40px;
+    /*10 = top and bottom, 40=sides*/
+    color: #002554;
+    font-size: 18px;
+  }
+
+
+
+  a:link {
+    /*Links are all the same colour as the text*/
+    text-decoration: none;
+    color: #0e0e0e;
+  }
+
+  a:visited {
+    /*Visited links are not changing colour for this webpage*/
+    text-decoration: none;
+    color: #0e0e0e;
+  }
+
+  a:hover {
+    /*when hovering over a link, it will underline and have a blue background*/
+    text-decoration: underline;
+    background-color: #01a2e0;
+    color: white;
+  }
+
+  a:hover img {
+    /*This is for the images that are links, they will have a blue border when hovered*/
+    border: 2px solid #01a2e0;
+  }
+
+  /*The dropdown menu is hidden in desktop mode, as the main menu displays across the top navigation bar*/
+  .dropdown_button {
+    display: none;
+  }
+
+
+  /*SUB MENU NAVBAR*/
+
+  .tickets_navigation {
+    background-color: #002554;
+    overflow: hidden;
+    /*This hides any image overflow that may occur. This way ther eis no horizontal scrolling*/
+    /* .tickets_navigation { */
+    position: sticky;
+    top: 48px;
+    /* adjusted to match main navbar height */
+    z-index: 1000;
+    /* keeps it above other content */
+  }
+
+  #first_link_passes_nav {
+    margin-left: 15%;
+    /*Gives a nicer formatting to use the entire screen*/
+    border-left: 2px solid #01a2e0;
+  }
+
+  .tickets_navigation a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: 2px solid #01a2e0;
+  }
+
+
+  /*FOOTER */
+
+  .footer_every_page {
+    max-width: 100%;
+    z-index: 0;
+    text-align: right;
+    border-top: 8px solid #002554;
+  }
+
+  div.footer_cell p {
+    font-weight: bold;
+    padding: 15px;
+    /* Center text */
+    margin: 0 auto;
+  }
+
+}
