@@ -14,7 +14,7 @@ white - #ffffff
 black - #0e0e0e
 */
 
-@media screen and (min-width:240px) and (max-width:767px) {
+@media screen and (max-width:767px) {
 
   /*Added as the navigation bar was not taking up the entire page*/
   body,
