@@ -1,0 +1,116 @@
+<!--
+Bryce Dixon  March 2026
+Portfolio Website
+This website was built on top of a website I created in Dec 2024 for COMP 2681.
+
+This page displays a few projects I have created in a formatted grid. 
+
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Styles used in many pages in stylesheets. CSS used only on this page are below <style> -->
+    <link rel="stylesheet" href="../css/allPages_mobile.css">
+    <!-- <link rel="stylesheet" href="css/allPages_tablet.css"> -->
+    <link rel="stylesheet" href="../css/allPages_desktop.css">
+    <link rel="stylesheet" href="../css/projects.css">
+
+    <title> Portfolio: Projects</title>
+
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="keywords to help browser" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../javascript/dropdown_menu.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <!--MAIN NAV BAR-->
+    <!--Same as index.html-->
+    <div class="navigation_bar dropDown">
+        <div class="menu_button_mobile_only">
+            <button id="dropdown_mobile_only" class="dropdown_button" onclick="displayMenu()">&#x2261; MENU</button>
+            <a href="../index.html" class="logo"> {b_D}</a>
+        </div>
+        <ul id="drop_down_menu" class="navigation dropdown_content">
+            <li><a href="workTimeline.html" title="View My Work History">WORK</a></li>
+            <li><a href="educationTimeline.html" title="View My Education">EDUCATION</a></li>
+            <li><a href="projects.html" title="View Projects">PROJECTS</a></li>
+            <li><a style="background-color: #01a2e0; text-decoration: underline;">HOBBIES</a></li>
+        </ul>
+    </div>
+
+    <!--SUB MENu: Inner page nav bar-->
+    <div class="tickets_navigation">
+        <a id="first_link_passes_nav" style="background-color: #01a2e0;">Hobbies Overview</a>
+        <!-- <a href="fireSim.html" title="">Fire Simulator</a>
+        <a href="roboticsProject.html">Solar Robot</a> -->
+    </div>
+
+
+    <!-- Projects Grid -->
+
+    <section class="projects">
+        <h1>Hobbies</h1>
+        <p class="projects-intro">
+            Here is a small selection of my hobbies and hobby projects!
+        </p>
+
+        <!-- Grid itself -->
+        <!-- Working with iframe REF: https://www.w3schools.com/html/html_youtube.asp -->
+        <div class="project-grid">
+            <div class="project-card">
+               <img src="../images/sqRackMontage4.JPG">
+                <h3>WoodWorking</h3>
+                <!-- <p class="tech">Shapr3D CAD</p> -->
+                <p>
+                    Woodworking has always been a passion of mine. I typically always have a project of some sort on the go. 
+                    I like to build using hand tools and reclaimed wood as a more sustainable approach.
+                    <!-- DESC: squat rack, shoe rack, hammock stand, bike rack
+                    model house we built
+                    homemade bridges at gypsum?
+                    Built in 3d CAD programs beforehand -->
+                </p>
+                <!-- <a href="">More Images >></a> -->
+            </div>
+
+            <div class="project-card">
+                <img src="../images/shapr3D.PNG">
+                <h3>Architecture Design</h3>
+                <p class="tech">Shapr3D CAD app</p>
+                <p>
+                    Architecture and design has always fascinated me. Since I can remember, I have always doodled floor plan and design
+                    layouts. I have turned some designs into bird houses in the past.
+                    <!-- DESC: DEsigning floorplans, layouts, homes, neighbourhoods, yards etc. -->
+                </p>
+                <!-- <a href="">More Images >> </a> -->
+            </div>
+            <div class="project-card">
+                <img src="../images/weight_lifting.jpeg">
+                <h3>Weight Lifting</h3>
+                <!-- <p class="tech"> </p> -->
+                <p>
+                    Growing up playing many sports, weight lifting has always been, and continues to be, an important part of my life.
+                </p>
+                <!-- <a href="">More Info >> </a> -->
+            </div>
+            <div class="project-card">
+                <img src="../images/moutain_bike.png">
+                <h3>Biking</h3>
+                <!-- <p class="tech"></p> -->
+                <p>
+                    I love riding bikes. I love working on bikes. I just really love bikes.
+                </p>
+                <!-- <a href="">More Info >></a> -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer_every_page">
+        <div class="footer_cell">
+            <p>&copy Bryce Dixon, 2026</p>
+        </div>
+    </footer>
+</body>
+
+</html>
