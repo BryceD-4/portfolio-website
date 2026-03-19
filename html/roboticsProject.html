@@ -1,0 +1,78 @@
+<!--
+Bryce Dixon  March 2026
+Portfolio Website
+This website was built on top of a website I created in Dec 2024 for COMP 2681.
+
+This is an individual project page for the robotics project I created during my undergraduate degree.
+
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/allPages_mobile.css">
+    <!-- <link rel="stylesheet" href="css/allPages_tablet.css"> -->
+    <link rel="stylesheet" href="../css/allPages_desktop.css">
+    <!-- Css specific to the projects section of the website -->
+    <link rel="stylesheet" href="../css/projects.css">
+
+    <title> Portfolio: Project - Fire Simulator</title>
+
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="keywords to help browser" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../javascript/dropdown_menu.js" type="text/javascript" defer></script>
+
+</head>
+
+<body>
+    <!--MAIN NAV BAR-->
+    <!--Same as index.html-->
+    <div class="navigation_bar dropDown">
+        <div class="menu_button_mobile_only">
+            <button id="dropdown_mobile_only" class="dropdown_button" onclick="displayMenu()">&#x2261; MENU</button>
+            <a href="../index.html" class="logo"> {b_D}</a>
+        </div>
+        <ul id="drop_down_menu" class="navigation dropdown_content">
+            <li><a href="workTimeline.html" title="View My Work History">WORK</a></li>
+            <li><a href="educationTimeline.html" title="View My Education">EDUCATION</a></li>
+            <li><a href="projects.html" style="background-color: #01a2e0; text-decoration: underline;">PROJECTS</a></li>
+        </ul>
+    </div>
+
+    <!--Inner page nav bar-->
+    <div class="tickets_navigation">
+        <a id="first_link_passes_nav" href="projects.html">Projects Overview</a>
+        <a href="fireSim.html">Fire Simulator</a>
+        <a style="background-color: #01a2e0;">Solar Robot</a>
+        <!-- <a href="" title="">Ant Simulator</a>
+        <a href="" title="">Solar Robot</a>
+        <a href="" title="">2D Survival Game</a> -->
+    </div>
+
+    <section class="projects">
+        <h2>Arduino Solar Robot</h2>
+        <!-- Featured Project -->
+        <div class="featured-project">
+             <img src="../images/arduino_robot_front.jpg">
+            <div class="project-info">
+                <h3>Project Information:</h3>
+                <ul>
+                    <li></li>
+                </ul>
+                <div class="project-links">
+                    <br>
+                    <a target="_blank" href="../project_reports/COMP444_FinalProject.pdf">Project Report >></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer_every_page">
+        <div class="footer_cell">
+            <p>&copy Bryce Dixon, 2026</p>
+        </div>
+    </footer>
+</body>
+
+</html>
