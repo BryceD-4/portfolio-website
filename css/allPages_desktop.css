@@ -28,6 +28,7 @@ black - #0e0e0e
     padding: 0;
     box-sizing: border-box;
     font-family: Helvetica, sans-serif;
+    line-height: 1.4;
   }
 
   /* Website Logo { b_D } */
