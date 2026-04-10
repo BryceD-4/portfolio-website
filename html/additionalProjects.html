@@ -1,0 +1,214 @@
+<!--
+Bryce Dixon  March 2026
+Portfolio Website
+This website was built on top of a website I created in Dec 2024 for COMP 2681.
+
+This page displays a few projects I have created in a formatted grid. 
+
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Styles used in many pages in stylesheets. CSS used only on this page are below <style> -->
+    <link rel="stylesheet" href="../css/allPages_mobile.css">
+    <!-- <link rel="stylesheet" href="css/allPages_tablet.css"> -->
+    <link rel="stylesheet" href="../css/allPages_desktop.css">
+    <link rel="stylesheet" href="../css/projects.css">
+
+    <title> Portfolio: Projects</title>
+
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="keywords to help browser" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../javascript/dropdown_menu.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <!--MAIN NAV BAR-->
+    <!--Same as index.html-->
+    <div class="navigation_bar dropDown">
+        <div class="menu_button_mobile_only">
+            <button id="dropdown_mobile_only" class="dropdown_button" onclick="displayMenu()">&#x2261; MENU</button>
+            <a href="../index.html" class="logo"> {b_D}</a>
+        </div>
+        <ul id="drop_down_menu" class="navigation dropdown_content">
+            <li><a href="workTimeline.html" title="View My Work History">WORK</a></li>
+            <li><a href="educationTimeline.html" title="View My Education">EDUCATION</a></li>
+            <li><a href="projects.html" style="background-color: #01a2e0; text-decoration: underline;">PROJECTS</a></li>
+            <li><a title="View My Hobbies" href="hobbies.html" >HOBBIES</a></li>
+        </ul>
+    </div>
+
+    <!--SUB MENu: Inner page nav bar-->
+    <div class="tickets_navigation">
+        <a href="projects.html" id="first_link_passes_nav">Projects Overview</a>
+        <a href="" title="" style="background-color: #01a2e0;">Additional Projects</a>
+        <!-- <a href="">Projects In-Progress</a> -->
+    </div>
+
+    <!-- Projects Grid -->
+
+    <section class="projects">
+        <h1>Additional Projects</h1>
+        <p class="projects-intro">
+            Here are some additional projects I have developed!
+        </p>
+
+        <!-- Grid itself -->
+        <!-- Working with iframe REF: https://www.w3schools.com/html/html_youtube.asp -->
+        <div class="project-grid">
+            <div class="project-card">
+                <!-- ifrmae from youtube video with added looping and autoplay features -->
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/kroj6nbT4Vk?autoplay=1&mute=1&loop=1&playlist=kroj6nbT4Vk&controls=0&modestbranding=1"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen>
+                </iframe>
+                <h3>2D Survival Game (2025)</h3>
+                <p class="tech">Phaser | JavaScript | Tiled | Testing Plan</p>
+                <p>
+                    <ul>
+                        <li>
+                            A 2D survival game where players battle waves of enemies, collect upgrades, and 
+                            progress through three unique levels. 
+                        </li>
+                        <li>
+                            Developed with MVC architecture, Agile practices, and an emphasis on intuitive UI/UX design.
+                        </li>
+                    </ul>
+                </p>
+                <a target="_blank" href="../project_reports/Sudsy_Report_TestPlan.pdf">Project Report >></a>
+                <a target="_blank" href="../project_reports/Sudsy's Kitchen Survival Presentation.pdf">Project Presentation >></a>
+            </div>
+            
+            <div class="project-card">
+                <!-- ifrmae from youtube video with added looping and autoplay features -->
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/kroj6nbT4Vk?autoplay=1&mute=1&loop=1&playlist=kroj6nbT4Vk&controls=0&modestbranding=1"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen>
+                </iframe>
+                <h3>Connect Four AI Engine (2026)</h3>
+                <p class="tech"> JavaFx | Minimax | Alpha-Beta Pruning</p>
+                <p>
+                    <ul>
+                        <li>
+                            A playable Connect Four implementation featuring a CPU opponent powered by Minimax search and Alpha-Beta pruning for strategic decision-making. 
+                        </li>
+                        <li>
+                            Includes visualized AI move evaluation and turn-based gameplay interaction.
+                        </li>
+                    </ul>
+                </p>
+                <!-- <a target="_blank" href="">Project Report >></a>
+                <a target="_blank" href="">Project Presentation >></a> -->
+            </div>
+            
+             <div class="project-card">
+                <!-- ifrmae from youtube video with added looping and autoplay features -->
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/kroj6nbT4Vk?autoplay=1&mute=1&loop=1&playlist=kroj6nbT4Vk&controls=0&modestbranding=1"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen>
+                </iframe>
+                <h3> Q-Learning Maze Race (2026)</h3>
+                <p class="tech"> JavaFx | Reinforcement Learning</p>
+                <p>
+                    <ul>
+                        <li>
+                            A reinforcement learning demonstration where an AI agent learns to navigate and 
+                            adapt through repeated maze trials before competing against the player in a dynamic obstacle course. 
+                        </li>
+                        <li>
+                            Includes adaptive learning for breakable barrier interactions.
+                        </li>
+                    </ul>
+                </p>
+                <!-- <a target="_blank" href="">Project Report >></a>
+                <a target="_blank" href="">Project Presentation >></a> -->
+            </div>
+
+             <div class="project-card">
+                <!-- ifrmae from youtube video with added looping and autoplay features -->
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/kroj6nbT4Vk?autoplay=1&mute=1&loop=1&playlist=kroj6nbT4Vk&controls=0&modestbranding=1"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen>
+                </iframe>
+                <h3>Competitive Collection AI Simulation (2026)</h3>
+                <p class="tech"> JavaFx | Blended Flocking Behaviour | Seek Behaviour </p>
+                <p>
+                    <ul>
+                        <li>
+                            A toroidal JavaFX game where players compete against an AI-controlled opponent to collect items across the map.  
+                        </li>
+                        <li>
+                            Features follow-based movement algorithms, modified flocking behaviours, and dynamic CPU target selection for autonomous agent decision-making.
+                        </li>
+                    </ul>
+                </p>
+                <!-- <a target="_blank" href="">Project Report >></a>
+                <a target="_blank" href="">Project Presentation >></a> -->
+            </div>
+
+            <div class="project-card">
+                <!-- ifrmae from youtube video with added looping and autoplay features -->
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/kroj6nbT4Vk?autoplay=1&mute=1&loop=1&playlist=kroj6nbT4Vk&controls=0&modestbranding=1"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="autoplay; encrypted-media"
+                    allowfullscreen>
+                </iframe>
+                <h3> A* Pathfinding Visualizer (2025)</h3>
+                <p class="tech"> JavaFx </p>
+                <p>
+                    <ul>
+                        <li>
+                            An interactive pathfinding visualization tool allowing users to design obstacle grids and weighted terrain while observing the A* algorithm calculate the lowest-cost route in real time. 
+                        </li>
+                        <li>
+                            Includes animated traversal of the final computed path.
+                        </li>
+                    </ul>
+                </p>
+                <!-- <a target="_blank" href="">Project Report >></a>
+                <a target="_blank" href="">Project Presentation >></a> -->
+            </div>
+
+            <div class="project-card">
+                <img src="../images/LAMP_Image.png">
+                <h3>Job Tracking Web Application: LAMP Framework (2025) </h3>
+                <p class="tech">HTTP | HTML | CSS | JavaScript</p>
+                <p>
+                    <ul>
+                        <li>
+                            A full-stack CRUD web application built with the LAMP stack featuring authenticated user accounts and scalable user-specific data management through relational database architecture.
+                        </li>
+                    </ul>
+                </p>
+    
+                <a target="_blank" href="../project_reports/Relational_Database_LAMP/LAMP framework_Project Proposal.pdf"> Project Proposal >> </a>
+                <a target="_blank" href="../project_reports/Relational_Database_LAMP/LAMP framework User Guide.pdf"> Project Presentation >> </a>
+            </div>
+            
+        </div>
+    </section>
+
+    <footer class="footer_every_page">
+        <div class="footer_cell">
+            <p>&copy Bryce Dixon, 2026</p>
+        </div>
+    </footer>
+</body>
+
+</html>
