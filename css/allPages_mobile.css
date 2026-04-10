@@ -170,7 +170,7 @@ which are then displayed as the drop down menu items*/
     overflow: hidden;
     position: sticky;
     /* This is relative to the size of the top menu */
-    top: 47px;
+    top: 46px;
     z-index: 9;
   }
 
