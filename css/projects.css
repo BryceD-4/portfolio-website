@@ -29,6 +29,7 @@ This is the CSS styles for the project pages of my website
 .featured-project {
   /* Allow items to format neatly to the page */
   display: flex;
+  align-items: center;
   gap: 30px;
   margin-bottom: 60px;
 }
@@ -49,6 +50,16 @@ This is the CSS styles for the project pages of my website
 .project-info {
   display: flex;
   flex-direction: column;
+}
+/* Move header closer to bullet points */
+.project-info h3 {
+  margin-bottom: 5px; 
+}
+
+/* Move ul closer to header, but keep indentation */
+.project-info ul {
+  margin-top: 0;      
+  /* padding-left: 20px;  */
 }
 
 .tech {
