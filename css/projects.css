@@ -37,6 +37,7 @@ This is the CSS styles for the project pages of my website
 .featured-project img {
   width: 50%;
   border-radius: 10px;
+  border: 1px solid black;
 }
 
 .featured-project video, .featured-project iframe {
