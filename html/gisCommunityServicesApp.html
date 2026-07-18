@@ -1,0 +1,121 @@
+<!--
+Bryce Dixon  March 2026
+Portfolio Website
+This website was built on top of a website I created in Dec 2024 for COMP 2681.
+
+This is an individual project page for the GIS Enable Community Support Project.
+
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/allPages_mobile.css">
+    <!-- <link rel="stylesheet" href="css/allPages_tablet.css"> -->
+    <link rel="stylesheet" href="../css/allPages_desktop.css">
+    <!-- Css specific to the projects section of the website -->
+    <link rel="stylesheet" href="../css/projects.css">
+
+    <title> Portfolio: Project - GIS Community Support App</title>
+
+    <meta charset="UTF-8" />
+    <meta name="keywords" content="keywords to help browser" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="../javascript/dropdown_menu.js" type="text/javascript" defer></script>
+
+</head>
+
+<body>
+    <!--MAIN NAV BAR-->
+    <!--Same as index.html-->
+    <div class="navigation_bar dropDown">
+        <div class="menu_button_mobile_only">
+            <button id="dropdown_mobile_only" class="dropdown_button" onclick="displayMenu()">&#x2261; MENU</button>
+            <a href="../index.html" class="logo"> {b_D}</a>
+        </div>
+        <ul id="drop_down_menu" class="navigation dropdown_content">
+            <li><a href="workTimeline.html" title="View My Work History">WORK</a></li>
+            <li><a href="educationTimeline.html" title="View My Education">EDUCATION</a></li>
+            <li><a href="projects.html" style="background-color: #01a2e0; text-decoration: underline;">PROJECTS</a></li>
+            <li><a href="hobbies.html" title="View My Hobbies">ABOUT ME</a></li>
+        </ul>
+    </div>
+
+    <!--Inner page nav bar-->
+    <div class="tickets_navigation">
+        <a id="first_link_passes_nav" href="projects.html">Featured Projects</a>
+        <a href="additionalProjects.html">Additional Projects</a>
+        <!-- <a href="">Solar Robot</a> -->
+    </div>
+
+    <section class="projects">
+        <h2>Forest Fire Simulator</h2>
+        <!-- Featured Project -->
+        <div class="featured-project">
+            <img src="../images/GIS_Main.png">
+            <div class="project-info">
+                <h3>Project Information:</h3>
+                <ul>
+                    <!-- testing suite -->
+                     <!-- Software used -->
+                      <!-- Overall use cases -->
+                    <li>
+                        A GIS-enabled web application that helps users discover and visualize community support services based
+                        on proximity, categories, and spatial relationships. 
+                    </li>
+                    <li>
+                        I have been hired to develop this for the UBCO Public Health Research Lab.
+                    </li>
+                    <li>
+                        Regression testing suite (unit, integration, and e2e) utilizes: 
+                        <ul>
+                            <li>
+                                <b>Backend:</b> pytest  
+                            </li>  
+                            <li>
+                                <b>Frontend:</b> Vitest, JSDOM, React Testing Library (RTL), Mock Service Worker (MSW)
+                            </li> 
+                            <li>
+                                <b>End-to-end (e2e):</b> Playwright, MSW
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Full stack application with GIS-based architecture to allow for database analytics using GIS platforms.
+                    </li>
+                    <li>
+                        Technology stack:
+                        <ul>
+                            <li>
+                                <b>Frontend:</b> React, TypeScript, Leaflet
+                            </li>
+                            <li>
+                                <b>Backend:</b> FastAPI, SQLAlchemy, Alembic
+                            </li>
+                            <li>
+                                <b>Database:</b> PostgreSQL, PostGIS
+                            </li>
+                            <li>
+                                <b>Docker Compose:</b> 3 containers (frontend, backend, database)
+                            </li>
+                        </ul>
+                    </li>
+                    
+                </ul>
+                <div class="project-links">
+                    <br>
+                    <!-- <a target="_blank" href="https://github.com/BryceD-4/FireSimulator4911">GitHub >></a> -->
+                    <!-- <a target="_blank" href="../project_reports/FireSim_Report.pdf">Full Report >></a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer_every_page">
+        <div class="footer_cell">
+            <p>&copy Bryce Dixon, 2026</p>
+        </div>
+    </footer>
+</body>
+
+</html>
