@@ -36,7 +36,7 @@ This page displays a few projects I have created in a formatted grid.
             <li><a href="workTimeline.html" title="View My Work History">WORK</a></li>
             <li><a href="educationTimeline.html" title="View My Education">EDUCATION</a></li>
             <li><a href="projects.html" style="background-color: #01a2e0; text-decoration: underline;">PROJECTS</a></li>
-            <li><a title="View My Hobbies" href="hobbies.html" >ABOUT ME</a></li>
+            <li><a title="View My Hobbies" href="hobbies.html">ABOUT ME</a></li>
         </ul>
     </div>
 
@@ -56,31 +56,65 @@ This page displays a few projects I have created in a formatted grid.
             Here is a small selection of software projects I have developed!
         </p>
 
-         <!-- Working with iframe REF: https://www.w3schools.com/html/html_youtube.asp -->
+        <!-- Working with iframe REF: https://www.w3schools.com/html/html_youtube.asp -->
         <div class="project-grid">
+
+            <div class="project-card">
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/LPJiEm7Y5Fo?autoplay=1&mute=1&loop=1&playlist=LPJiEm7Y5Fo&controls=0&modestbranding=1"
+                    title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
+                </iframe>
+                <!-- <video controls autoplay muted loop playsinline>
+                    <source src="../videos/fire-sim.mp4" type="video/mp4">
+                </video> -->
+                <!-- ifrmae from youtube video with added looping and autoplay features -->
+
+                <h3> *In Development*: Interactive Biomechanics Application (2026)</h3>
+                <p class="tech">Blender | Three.js </p>
+                <p>
+                <ul>
+                    <li>
+                        An interactive web page created for clearer visualization of biomechanical
+                        concepts relating to rehabilitation education for patients and students.
+                    </li>
+                    <li>
+                        Modelling and rigging of the 3D objects were completed within Blender.
+                    </li>
+                    <li>
+                        Three.js components were created to load and interact with the Blender objects.
+                    </li>
+                    </li>
+                </ul>
+                </p>
+                <!-- <a target="_blank" href="https://github.com/BryceD-4/FireSimulator4911">GitHub >></a>
+                <a target="_blank" href="../project_reports/FireSim_Report.pdf">Full Report >></a> -->
+                <!-- <a href="gisCommunityServicesApp.html">More Details >></a> -->
+            </div>
+
             <div class="project-card">
                 <img src="../images/GIS_Main.png">
                 <!-- <video controls autoplay muted loop playsinline>
                     <source src="../videos/fire-sim.mp4" type="video/mp4">
                 </video> -->
-               <!-- ifrmae from youtube video with added looping and autoplay features -->
-                
+                <!-- ifrmae from youtube video with added looping and autoplay features -->
+
                 <h3> *In Development*: GIS Enabled Community Services App (2026)</h3>
                 <p class="tech">React.js | Leaflet | FastAPI | SQLAlchemy | PostgreSQL | PostGIS | GitHub</p>
                 <p>
-                    <ul>
-                        <li>
-                            A GIS-enabled web application that helps users discover and visualize community support services based
-                            on proximity, categories, and spatial relationships. 
-                        </li>
-                         <li>
-                            I am the sole developer hired to develop, build, and test this custom application.
-                        </li>
-                        <li>
-                            Designed to support both service navigation and future spatial analysis of service 
-                            availability, distribution, and population health trends through a GIS-based architecture.
-                        </li>
-                    </ul>
+                <ul>
+                    <li>
+                        A GIS-enabled web application that helps users discover and visualize community support services
+                        based
+                        on proximity, categories, and spatial relationships.
+                    </li>
+                    <li>
+                        I am the sole developer hired to develop, build, and test this custom application.
+                    </li>
+                    <li>
+                        Designed to support both service navigation and future spatial analysis of service
+                        availability, distribution, and population health trends through a GIS-based architecture.
+                    </li>
+                </ul>
                 </p>
                 <!-- <a target="_blank" href="https://github.com/BryceD-4/FireSimulator4911">GitHub >></a>
                 <a target="_blank" href="../project_reports/FireSim_Report.pdf">Full Report >></a> -->
@@ -91,31 +125,28 @@ This page displays a few projects I have created in a formatted grid.
                 <!-- <video controls autoplay muted loop playsinline>
                     <source src="../videos/fire-sim.mp4" type="video/mp4">
                 </video> -->
-               <!-- ifrmae from youtube video with added looping and autoplay features -->
+                <!-- ifrmae from youtube video with added looping and autoplay features -->
                 <iframe width="560" height="315"
                     src="https://www.youtube.com/embed/VM-u2BdUYNA?autoplay=1&mute=1&loop=1&playlist=VM-u2BdUYNA&controls=0&modestbranding=1"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="autoplay; encrypted-media"
-                    allowfullscreen>
+                    title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
                 </iframe>
                 <h3>Unity Forest Fire Simulator (2026)</h3>
                 <p class="tech">Unity | C# | GitHub | Unity Testing Framework</p>
                 <p>
-                    <ul>
-                        <li>
-                            A grid-based wildfire simulation modelling fire propagation using probabilistic 
-                            ignition and user-controlled environmental variables. 
-                        </li>
-                        <li>
-                            Developed for the Kelowna Fire Department.
-                        </li>
-                        <li>
-                            Currently redesigning original C# backend modules using 
-                            FastAPI/Python for better separation of concerns and easier 
-                            cloud integration via AWS (EC2).
-                        </li>
-                    </ul>
+                <ul>
+                    <li>
+                        A grid-based wildfire simulation modelling fire propagation using probabilistic
+                        ignition and user-controlled environmental variables.
+                    </li>
+                    <li>
+                        Developed for the Kelowna Fire Department.
+                    </li>
+                    <li>
+                        Currently redesigning original C# backend modules using
+                        FastAPI/Python for better separation of concerns and easier
+                        cloud integration via AWS (EC2).
+                    </li>
+                </ul>
                 </p>
                 <!-- <a target="_blank" href="https://github.com/BryceD-4/FireSimulator4911">GitHub >></a>
                 <a target="_blank" href="../project_reports/FireSim_Report.pdf">Full Report >></a> -->
@@ -124,7 +155,7 @@ This page displays a few projects I have created in a formatted grid.
             </div>
 
             <div class="project-card">
-            <!-- Image Source: Freepik.com -->
+                <!-- Image Source: Freepik.com -->
                 <!-- <img src="../images/greenhouseCartoon.jpg"> -->
                 <!-- <iframe width="560" height="315" 
                     src="https://www.youtube.com/embed/Lzia2O_Ftbc?autoplay=1&mute=1&loop=1&playlist=Lzia2O_Ftbc&controls=0&modestbranding=1" 
@@ -134,31 +165,30 @@ This page displays a few projects I have created in a formatted grid.
                     allowfullscreen>
                 </iframe> -->
 
-                <iframe width="560" height="315" 
-                 src="https://www.youtube.com/embed/a_fnJ1DQb5g?autoplay=1&mute=1&loop=1&playlist=a_fnJ1DQb5g&controls=0&modestbranding=1" 
-                 title="Greenhouse Dashboard" 
-                 frameborder="0" 
-                 allow="autoplay; encrypted-media;" 
-                 allowfullscreen>
+                <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/a_fnJ1DQb5g?autoplay=1&mute=1&loop=1&playlist=a_fnJ1DQb5g&controls=0&modestbranding=1"
+                    title="Greenhouse Dashboard" frameborder="0" allow="autoplay; encrypted-media;" allowfullscreen>
                 </iframe>
 
                 <h3>Cloud-based Resource Optimization System (2026)</h3>
                 <p class="tech"> .NET | C# | xUnit | PostgreSQL | Docker | AWS </p>
                 <p>
-                    <ul>
-                        <li>
-                            Currently developing a cloud-based resource optimization system. 
-                        </li>
-                        <li>
-                            This project is inspired by a concept for automated greenhouse management and harvesting robotics, 
-                            with a focus on scalable architecture, comprehensive testing suite, and resource management.
-                        </li>
-                        <li>
-                            Deployed the Dockerized application on AWS EC2, with Amazon RDS (PostgreSQL) for data persistence.
-                        </li>
-                    </ul>
+                <ul>
+                    <li>
+                        Currently developing a cloud-based resource optimization system.
+                    </li>
+                    <li>
+                        This project is inspired by a concept for automated greenhouse management and harvesting
+                        robotics,
+                        with a focus on scalable architecture, comprehensive testing suite, and resource management.
+                    </li>
+                    <li>
+                        Deployed the Dockerized application on AWS EC2, with Amazon RDS (PostgreSQL) for data
+                        persistence.
+                    </li>
+                </ul>
                 </p>
-    
+
                 <a href="greenhouseProject.html">More Details >> </a>
             </div>
 
@@ -167,15 +197,15 @@ This page displays a few projects I have created in a formatted grid.
                 <h3>Arduino Solar Robot (2024)</h3>
                 <p class="tech"> C++ | Motor Driver | Ultrasonic sensor | PhotoResistor</p>
                 <p>
-                    <ul>
-                        <li>
-                            A physical robotics prototype capable of navigation, mapping, and 
-                            pathfinding within unknown environments. 
-                        </li>
-                        <li>
-                            Designed for potential agritech crop optimization applications.
-                        </li>
-                    </ul>
+                <ul>
+                    <li>
+                        A physical robotics prototype capable of navigation, mapping, and
+                        pathfinding within unknown environments.
+                    </li>
+                    <li>
+                        Designed for potential agritech crop optimization applications.
+                    </li>
+                </ul>
                 </p>
                 <!-- <a target="_blank" href="../project_reports/COMP444_FinalProject.pdf">Full Report >></a> -->
                 <a href="roboticsProject.html">More Details >></a>
@@ -188,15 +218,13 @@ This page displays a few projects I have created in a formatted grid.
                 <!-- ifrmae from youtube video with added looping and autoplay features -->
                 <iframe width="560" height="315"
                     src="https://www.youtube.com/embed/nY4tB796ABg?autoplay=1&mute=1&loop=1&playlist=nY4tB796ABg&controls=0&modestbranding=1"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="autoplay; encrypted-media"
-                    allowfullscreen>
+                    title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
                 </iframe>
                 <h3>Ant Simulator (2026)</h3>
                 <p class="tech">JavaFx | NPC Behaviour</p>
                 <p>
-                    A finite state machine simulation of biological ant movement utilizing NPC wandering, A* pathfinding, 
+                    A finite state machine simulation of biological ant movement utilizing NPC wandering, A*
+                    pathfinding,
                     and path smoothing behaviours to model autonomous agent movement.
                 </p>
                 <a target="_blank" href="../project_reports/Ant Sim Report.pdf">Full Report >></a>
@@ -206,27 +234,25 @@ This page displays a few projects I have created in a formatted grid.
                 <!-- ifrmae from youtube video with added looping and autoplay features -->
                 <iframe width="560" height="315"
                     src="https://www.youtube.com/embed/vVhFhYil-Po?autoplay=1&mute=1&loop=1&playlist=vVhFhYil-Po&controls=0&modestbranding=1"
-                    title="Q Learning - Racing"
-                    frameborder="0"
-                    allow="autoplay; encrypted-media"
-                    allowfullscreen>
+                    title="Q Learning - Racing" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen>
                 </iframe>
                 <h3> Q-Learning Maze Race (2026)</h3>
                 <p class="tech"> JavaFx | Reinforcement Learning</p>
                 <p>
-                    <ul>
-                        <li>
-                            A reinforcement learning demonstration where an AI agent (RED) learns to navigate and 
-                            adapt through repeated maze trials before competing against the player (BLUE) through the obstacle course. 
-                        </li>
-                        <li>
-                            Includes adaptive learning for breakable barrier (brown square) interactions.
-                        </li>
-                    </ul>
+                <ul>
+                    <li>
+                        A reinforcement learning demonstration where an AI agent (RED) learns to navigate and
+                        adapt through repeated maze trials before competing against the player (BLUE) through the
+                        obstacle course.
+                    </li>
+                    <li>
+                        Includes adaptive learning for breakable barrier (brown square) interactions.
+                    </li>
+                </ul>
                 </p>
                 <a target="_blank" href="../project_reports/Q-Learning Project Report.pdf">Full Report >></a>
             </div>
-            
+
         </div>
     </section>
 
